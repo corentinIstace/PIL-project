@@ -1,0 +1,165 @@
+// Fonts
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("../../__src/Fonts/II\ Vorkurs/") format("woff2"),
+    url("../../__src/Fonts/II\ Vorkurs/IIVorkursLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("../../__src/Fonts/II\ Vorkurs/IIVorkursMedium.woff2")
+      format("woff2"),
+    url("../../__src/Fonts/II\ Vorkurs/IIVorkursMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "II Vorkurs";
+  src: url("../../__src/Fonts/II\ Vorkurs/IIVorkursBold.woff2") format("woff2"),
+    url("../../__src/Fonts/II\ Vorkurs/IIVorkursBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// Temporary for missing elements
+.todo {
+  background-color: grey;
+  color: darkred;
+  margin: 100px;
+  text-align: center;
+}
+
+// Colors
+$main_color: #636161;
+$second_color: #ffc33b;
+
+// Svg logo elements
+$img_add: "../../img/add.svg";
+$img_big_x: "../../img/big-x.svg";
+$img_ar_vr: "../../img/cat-ar-vr.svg";
+$img_digital: "../../img/cat-digital.svg";
+$img_gaming: "../../img/cat-gaming.svg";
+$img_image: "../../img/cat-image.svg";
+$img_son: "../../img/cat-son.svg";
+
+@mixin img($size, $img_url) {
+  background-repeat: no-repeat;
+  background-image: url($img_url);
+  width: $size;
+  height: $size;
+  background-size: contain;
+}
+
+.img_add {
+  @include img(11px, $img_add);
+}
+
+.img_big_x {
+  @include img(1cm, $img_big_x);
+}
+
+.img_image {
+  @include img(1cm, $img_image);
+}
+
+.img_ar_vr {
+  @include img(1.25cm, $img_ar_vr);
+}
+
+.img_son {
+  @include img(1.25cm, $img_son);
+}
+
+.img_digital {
+  @include img(1cm, $img_digital);
+}
+
+.img_gaming {
+  @include img(1.25cm, $img_gaming);
+}
+
+.img_all_companies {
+  @include img(1cm, $img_digital);
+  filter: grayscale(100%) brightness(25%);
+}
+
+// Common styles
+* {
+  // margin: 0;
+  // padding: 0;
+  font-family: "II Vorkurs";
+  // color: white;
+}
+
+body {
+  background-color: black;
+}
+
+em {
+  color: $main_color;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+li {
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: inherit;
+  border: solid 1px $main_color;
+  border-radius: 9999px;
+  box-shadow: none;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.125em;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.main {
+  color: $main_color;
+}
+
+.second {
+  color: $second_color;
+}
+
+// Rules for desktop screens
+@media only screen and (min-width: 1025px) {
+  h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    // font-size: 1.3112em;
+  }
+
+  h4 {
+    //font-size: 0.9em;
+    margin-bottom: 20px;
+    line-height: 2;
+  }
+
+  p {
+    //font-size: 0.75em;
+    margin-bottom: 20px;
+    line-height: 2.2;
+    //color: $main_color;
+  }
+}

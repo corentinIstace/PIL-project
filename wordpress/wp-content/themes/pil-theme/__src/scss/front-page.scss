@@ -1,0 +1,166 @@
+.h2_size4 {
+  font-size: 4em;
+}
+
+.home {
+  color: white;
+  margin-left: 220px;
+  margin-top: 220px;
+
+  &__heading {
+    margin-bottom: 50px;
+    max-width: 1000px;
+  }
+
+  &__video {
+    width: 90%;
+    height: 600px;
+
+    iframe {
+      height: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &--shrink {
+    max-width: 60%;
+  }
+
+  &--flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  &--third {
+    max-width: 25%;
+    margin-left: 100px;
+
+    h2 {
+      max-width: 70%;
+    }
+
+    h3 {
+      max-width: 150px;
+    }
+
+    &__ul {
+      margin-top: 23px;
+
+      li {
+        list-style-image: url($img_add);
+      }
+    }
+  }
+
+  &--third:first-child {
+    margin-left: 0;
+  }
+
+  &--grand-texte {
+    font-size: 7em;
+    font-weight: 300;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  &--secteur {
+    height: 900px;
+
+    &__h2 {
+      max-width: 1000px;
+      margin-bottom: 20px;
+      font-size: 5em;
+      color: $second-color;
+    }
+
+    &__h2::first-line {
+      color: white;
+    }
+
+    &--list {
+      padding-right: 250px;
+    }
+
+    &--entreprises {
+      height: 6.6cm;
+      width: 16%; // ~ 100 / 6
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      margin-right: 20px;
+      padding: 20px;
+      padding-top: 30px;
+
+      em {
+        font-size: 0.7em;
+        color: $second-color;
+      }
+    }
+
+    .specific {
+      background-color: $main-color;
+    }
+
+    .all {
+      border: 1px solid $main-color;
+      justify-content: center;
+
+      .img_all_companies,
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        line-height: normal;
+        text-align: center;
+      }
+    }
+  }
+
+  &--entreprises {
+    padding: 10px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-flow: column wrap;
+      height: 16em;
+      padding-left: 0;
+      padding-right: 200px;
+    }
+
+    ul > li {
+      width: 20%;
+    }
+  }
+
+  &--formations {
+    background-color: white;
+    color: black;
+
+    &__image {
+      position: relative;
+      top: -150px;
+      max-width: min-content;
+    }
+
+    &--content {
+      max-width: 40%;
+      padding-left: 100px;
+      color: inherit;
+
+      * {
+        color: inherit;
+      }
+
+      ul {
+        //max-width: min-content;
+        display: inline-block;
+        margin-right: 50px;
+      }
+    }
+  }
+}

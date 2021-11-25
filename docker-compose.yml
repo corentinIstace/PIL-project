@@ -1,0 +1,18 @@
+---
+version: "3"
+services:
+  wordpress:
+    image: wordpress:latest
+    restart: always
+    ports:
+      - "80:80"
+    environment:
+      #WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_HOST: "188.166.24.55"
+      WORDPRESS_DB_NAME: pil-enterteamint
+      WORDPRESS_DB_USER: pil-enterteamint
+      WORDPRESS_DB_PASSWORD: L4yKVrphFenH9BKG
+    volumes:
+      - ./wordpress:/var/www/html
+volumes:
+  wordpress:

@@ -1,0 +1,11 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded", //"compressed", for production
+      "extensionName": ".css",
+      "savePath": "pil-theme/dist/css/"
+    }
+  ],
+  // Sass will only use the root file screen.scss
+  "liveSassCompile.settings.includeItems": ["pil-theme/__src/scss/screen.scss"]
+}
