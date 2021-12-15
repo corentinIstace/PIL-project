@@ -4,7 +4,7 @@ Project done by Corentin, Yves and Thomas
 
 ## About the project :
 
-The objective was to create a forum, based on our knowledge on HTML, CSS, PHP and Mysql
+For this exercice, it was asking to us to create the new website of the Pôle images of Liège.
 
 It's create for my BeCode formation for learning:
 
@@ -19,11 +19,10 @@ And improve:
 - PHP
 - Wordpress
 - Git and Github
+- docker
 
 
 ## Objectives
-
-For this exercice, it was asking to us to create the new website of the Pôle images of Liège.
 
 CSS / SCSS:
 
@@ -37,6 +36,13 @@ Git and Github:
 PHP:
 
 - write PHP proprely
+- create theme for wordpress
+
+Wordpress:
+
+- ACF
+- plugins
+- menu
 
 The project is still in an intermediate state. Missing pages.
 
